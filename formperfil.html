@@ -2,6 +2,7 @@
 <html lang="es-Es">
 <head>
 	<meta charset="utf-8">
+  <link rel="shortcut icon" href="imagenes/logo.png" />
 	<link rel="stylesheet" type="text/css" href="css/estilospagbase.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,17 +35,17 @@
       <nav>
     <ul class="menu">
       
-      <li class="icono"><i class="fa fa-home"></i><a href="areapersonalalumno.html">Area personal</a></li>
-      <li class="icono"><i class="fa fa-puzzle-piece"></i><a> Cursos</a><ul class="submenu">
+      <li class="icono"><i class="fa fa-home"></i><a href="areapersonalalumno.html">  Area personal</a></li>
+      <li class="icono"><i class="fa fa-puzzle-piece"></i><a> Sus Cursos</a><ul class="submenu">
         
-         <li><a href="introduccioncursoalumno.html">Introducción</a></li>
-              <li><a href="unidad1alumno.html">unidad 1 </a></li>
+         <li><a href="introduccioncursoalumno.html">Carpinteria</a></li>
+              
       </ul>
   
     </li>
-    <li class="icono"><i class="fa fa-suitcase"></i><a href="nosotros.html"> Nosotros</a></li>
+    <li class="icono"><i class="fa fa-suitcase"></i><a href="nosotrosinterno.html"> Nosotros</a></li>
     
-    <li class="icono"><i class="fa fa-envelope-o"></i><a href="contacto.html">  Contáctenos</a></li>
+    <li class="icono"><i class="fa fa-envelope-o"></i><a href="contactointerno.html">  Contáctenos</a></li>
   </ul>
 </nav>
 <!--fin  BARRA DE NAVEGACION-->
@@ -70,50 +71,50 @@
               
               <div id="camponombreprof">
                   <label>Nombre Completo: *</label>
-                  <input type="text" name="nombreprof" id="nombreprof" class="">
+                  <input type="text" name="nombreprof" id="nombreprof" class="" required="">
                   <div class="feedback"></div>
               </div>
 
             <div id="camponombreusuario">
               <label>Usuario: *</label>
-              <input type="text" name="curso" id="curso" class="">
-              <div class="feedback"></div>
+              <input type="text" name="curso" id="curso" class="" required="">
+              <div class="feedback" required=""></div>
           </div>
 
           <div id="camponombreprof">
             <label>Edad: *</label>
-            <input type="number" name="Edad" id="edad" class="">
+            <input type="number" name="Edad" id="edad" class="" required="">
             <div class="feedback"></div>
         </div>
         <div id="campoduracioncurso">
           <label>Nacionalidad: *</label>
-          <input type="text" name="duracioncurso" id="duracioncurso" class="">
+          <input type="text" name="duracioncurso" id="duracioncurso" class="" required="">
           <div class="feedback"></div>
       </div>
 
       <div id="campoduracioncurso">
           <label>Fecha de nacimiento: *</label>
-          <input type="date" name="fecha" id="fecha" class="">
+          <input type="date" name="fecha" id="fecha" class="" required="">
           <div class="feedback"></div>
       </div>
 
       <div id="campoduracioncurso">
           <label>Ocupacion: *</label>
-          <input type="text" name="duracioncurso" id="duracioncurso" class="">
+          <input type="text" name="duracioncurso" id="duracioncurso" class="" required="">
           <div class="feedback"></div>
       </div>
 
       <div id="campoduracioncurso">
-          <label>Genero: *</label>
+          <label class="genero">Genero: *</label>
       
-            <input type="radio" name="tres" value="H" /> Masculino
-            <input type="radio" name="tres" value="M" /> Femenino
+            <input id="genero" type="radio" name="tres" value="H" /> Masculino
+            <input id="genero" type="radio" name="tres" value="M" /> Femenino
       
       </div>
 
       <div id="campoduracioncurso">
           <label>Estado Civil: *</label>
-          <input type="text" name="duracioncurso" id="duracioncurso" class="">
+          <input type="text" name="duracioncurso" id="duracioncurso" class="" required="">
           <div class="feedback"></div>
       </div>
 
@@ -130,18 +131,18 @@
 
       <div id="campotelefonoprof">
           <label>Teléfono: *</label>
-          <input type="number" name="telefonoprof" id="telefonoprof" class="">
+          <input type="number" name="telefonoprof" id="telefonoprof" class="" required="">
           <div class="feedback"></div>
       </div>
 
       <div id="campocorreoprof" >
           <label> Correo Electrónico: *</label>
-          <input type="email" name="correoprof" id="correoprof" class="">
+          <input type="email" name="correoprof" id="correoprof" class="" required="">
           <div class="feedback"></div>
       </div>
 
       <div class="col" >
-          <input type="submit" class="boton1" value="Confirmar" />
+          <input type="submit" class="boton1" value="Confirmar"  onClick="alert('Su perfil se ha actualizado')" />
       </div> 
       <div class="col">
           <input type="reset" class="boton2" value="Restablecer" />

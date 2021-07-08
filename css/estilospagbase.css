@@ -828,10 +828,18 @@ input:focus:invalid {
    box-shadow: 0.5px 1px 5px black;
    margin: 8px 0;
    resize: none;
-
- 
-
    }
+
+      .formulariosregistro input, select{
+
+   border-radius: 5px;
+   font-size: 1em;
+   border: 1px solid #000000;
+   box-shadow: 0.5px 1px 5px black;
+   margin: 8px 0;
+   resize: none;
+   }
+
    .formulariosregistro #nombreprof, #duracioncurso, #curso {
        max-width: 380px;
        width: 100%;
@@ -839,7 +847,7 @@ input:focus:invalid {
        height: 100%;
    }
 
-   .formulariosregistro #correoprof, #telefonoprof{
+   .formulariosregistro #correoprof, #telefonoprof, #edad, #fecha{
     max-width: 380px;
     width: 100%;
     max-height: 20px;
@@ -1217,7 +1225,10 @@ h1, h2, h3, h4, h5 {
    position: relative;
    display: flex;
    flex-direction: column;
-   min-width: 0;
+   max-width: 450px;
+   width: 100%;
+   min-height: 770px;
+   height: 100%;
    word-wrap: break-word;
    background-color: #fff;
    background-clip: border-box;
@@ -1482,6 +1493,20 @@ figure.redes {
        margin-left: 350px;
    }
 
+      .unidad2y3 {
+        max-width: 900px;
+       width: 100%;
+       min-height: 200px;
+       height: 100%;
+       background-color: #FFFFFF;
+       box-shadow: 4px 4px 5px #000000;
+       border: 2px solid #EF7F3F;
+       font-family: 'Lato', sans-serif;
+       text-align: center;
+       margin-top: 200px;
+       margin-left: 350px;
+      }
+
 .fotoperfil {
     border: 1px solid black;
     border-radius: 4px;
@@ -1704,6 +1729,10 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
    max-width: 45%;
    width: 100%;
 }
+.unidad2y3 {
+   margin: auto;
+   margin-left: 55%;
+}
 
 }
 
@@ -1883,6 +1912,11 @@ footer.footindex {
  margin: 45rem 0 ;
  grid-auto-flow: row;
 }
+.unidad2y3 {
+   width: 550px;
+   margin: auto;
+   margin-left: 22%;
+}
 }
 
 /*MEDIA QUERY 425********************************************/
@@ -1982,10 +2016,25 @@ footer.footindex {
   
 }
 
+.formulariosregistro label {           
+
+  width: 100%;
+}
+.formulariosregistro #genero{           
+
+  width:5px;
+  height: 5px;
+}
+
+
 .formulariosregistro #correoprof, #telefonoprof{
 width: 100%;
 }
 
+.formulariosregistro img{ 
+   margin: auto;
+   margin-left: 20%;
+}
 .formulario2{           
    margin-top: 70%;   
    margin-right: 20px; 
@@ -2034,6 +2083,11 @@ width: 100%;
    padding: 40px;
    margin-top: 75rem;
    
+}
+.unidad2y3 {
+   width: 260px;
+   margin: auto;
+   margin-left: 11%;
 }
 
 footer {
@@ -2174,7 +2228,10 @@ iframe {
    margin-top: 85%; 
 }
 
-
+.formulariosregistro img{ 
+   margin: auto;
+   margin-left: 8%;
+}
 
 #hojavida1 {
    width: 80%;
@@ -2184,7 +2241,11 @@ iframe {
    
 }
 
-
+.unidad2y3 {
+   width: 250px;
+   margin: auto;
+   
+}
 
 
 
